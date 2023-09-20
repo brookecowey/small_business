@@ -100,4 +100,4 @@ class NewListing extends Component {
     }
 }
 
-export default AddCar
+export default NewListing

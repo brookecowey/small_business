@@ -52,4 +52,4 @@ class Details extends Component {
     }
 }
 
-export default About
+export default Details
