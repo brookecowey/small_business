@@ -7,6 +7,8 @@ import {
   TableHead,
   TableRow
 } from '@mui/material'
+import { Link } from 'react-router-dom'
+
 const Listing = (props) => {
     useEffect(() => {
       console.log(props);
@@ -26,7 +28,7 @@ const Listing = (props) => {
         <TableBody>
         {props.business.map((business, idx) => (
             <TableRow key={business.id}>
-                <TableCell>{business.name}</TableCell>
+                <TableCell><Link to={`/business/${business.id}`}>{business.name}</Link></TableCell>
                 <TableCell>{business.description}</TableCell>
                 <TableCell>{business.hours}</TableCell>
                 <TableCell>{business.location}</TableCell>

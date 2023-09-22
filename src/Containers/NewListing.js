@@ -1,10 +1,10 @@
 import { connect } from 'react-redux'
 import NewListing from '../Components/NewListing'
-import { newListing } from '../redux/actions'
+import { newListing } from '../Redux/Actions'
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        newListing: (listing) => dispatch(addListing(listing))
+        newListing: (listing) => dispatch(newListing(listing))
     }
 }
 
